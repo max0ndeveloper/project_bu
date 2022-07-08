@@ -1,17 +1,25 @@
 {
   "name": "project_l",
   "version": "0.1.0",
+  "homepage": "https://{max0ndeveloper}.github.io/{project_boo}",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "gh-pages": "^4.0.0",
+    "moment-timezone": "^0.5.34",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-open-weather": "^1.2.1",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-type-animation": "^1.1.3",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
